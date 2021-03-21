@@ -65,7 +65,7 @@ Plug 'arielrossanigo/dir-configs-override.vim'
 " Code commenter
 Plug 'scrooloose/nerdcommenter'
 " Better file browser
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtre/'
 " Class/module browser
 Plug 'majutsushi/tagbar'
 " Search results counter
@@ -133,7 +133,9 @@ Plug 'neomake/neomake'
 " to avoid that)
 Plug 'myusuf3/numbers.vim'
 " Nice icons in the file explorer and file type status line.
-Plug 'ryanoasis/vim-devicons'
+" Plug 'ryanoasis/vim-devicons'
+Plug 'dahu/learnvim'
+Plug 'dahu/vimgym'
 
 if using_vim
     " Consoles as buffers (neovim has its own consoles as buffers)
@@ -273,38 +275,6 @@ au FileType python map <silent> <leader>b Oimport ipdb; ipdb.set_trace()<esc>
 map <F4> :TagbarToggle<CR>
 " autofocus on tagbar open
 let g:tagbar_autofocus = 1
-
-" NERDTree -----------------------------
-
-" toggle nerdtree display
-map <F3> :NERDTreeToggle<CR>
-" open nerdtree with the current file selected
-nmap ,t :NERDTreeFind<CR>
-" don;t show these file types
-let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
-
-" Enable folder icons
-let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-let g:DevIconsEnableFoldersOpenClose = 1
-
-" Fix directory colors
-highlight! link NERDTreeFlags NERDTreeDir
-
-" Remove expandable arrow
-let g:WebDevIconsNerdTreeBeforeGlyphPadding = ""
-let g:WebDevIconsUnicodeDecorateFolderNodes = v:true
-let NERDTreeDirArrowExpandable = "\u00a0"
-let NERDTreeDirArrowCollapsible = "\u00a0"
-let NERDTreeNodeDelimiter = "\x07"
-
-" Autorefresh on tree focus
-function! NERDTreeRefresh()
-    if &filetype == "nerdtree"
-        silent exe substitute(mapcheck("R"), "<CR>", "", "")
-    endif
-endfunction
-
-autocmd BufEnter * call NERDTreeRefresh()
 
 " Tasklist ------------------------------
 

@@ -1,3 +1,4 @@
+autocmd VimEnter * :20vs +Ex ~/Downloads/Learn-Vim 
 "==========Python==========
 
 " provide the execution path to python3
@@ -60,3 +61,4 @@ noremap <silent> <C-Down> :resize +3<CR>
 " remap ctrl-k and ctrl-j to go up and down in command-line-mode
 cnoremap <C-k> <up>
 cnoremap <C-j> <down>
+
