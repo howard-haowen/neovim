@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/HaowenJ/.config/nvim'
+let g:netrw_dirhist_6='/Users'
+let g:netrw_dirhist_5='/Users/HaowenJ'
+let g:netrw_dirhist_4='/Users/HaowenJ/Downloads/Learn-Vim'
+let g:netrw_dirhist_3='/Users/HaowenJ/Downloads'
+let g:netrw_dirhist_2='/Users/HaowenJ/Documents/Receipts'
+let g:netrw_dirhist_1='/Users/HaowenJ/Documents'
+let g:netrw_dirhist_0='/Users/HaowenJ'
+let g:netrw_dirhist_9='/Users/HaowenJ/Downloads'
+let g:netrw_dirhist_8='/Users/HaowenJ/Downloads/Learn-Vim'
