@@ -62,3 +62,8 @@ noremap <silent> <C-Down> :resize +3<CR>
 cnoremap <C-k> <up>
 cnoremap <C-j> <down>
 
+" Window size
+set lines=25
+set columns=80
+set wrap
+set linebreak
